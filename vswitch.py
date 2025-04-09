@@ -37,7 +37,7 @@ while True:
   # 3. insert/update mac table
   if (eth_src not in mac_table or mac_table[eth_src] != vport_addr):
     mac_table[eth_src] = vport_addr
-    print(f"    ARP Cache: {mac_table}")
+    print(f"    Source Address Table (SAT): {mac_table}")
 
   # 4. forward ethernet frame
   #    if dest in mac table, forward ethernet frame to it
